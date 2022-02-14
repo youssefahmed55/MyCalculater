@@ -6,9 +6,13 @@ Skills Used :
 
 •Navigation Component
 
+`
+ implementation 'androidx.navigation:navigation-fragment:2.4.1'
+ 
+ 
+ implementation 'androidx.navigation:navigation-ui:2.4.1'
+`
 
- `implementation 'androidx.navigation:navigation-fragment:2.4.1'
- implementation 'androidx.navigation:navigation-ui:2.4.1' `
 
 • View Binding
 
@@ -19,7 +23,9 @@ Skills Used :
     viewBinding true
     
     
-     } `
+     } 
+     `
+     
      
      
 • Sdp
