@@ -1,5 +1,5 @@
-# MyCalculater
-Simple Calculater
+# MyCalculator
+Simple Calculator
 
 
 This Calculator to calculate Simple Operations like + , - , * , % and Division 
