@@ -2,7 +2,7 @@
 Simple Calculater
 
 
-This Calculator to calculate Simple Operations like + , - , * and Division 
+This Calculator to calculate Simple Operations like + , - , * , % and Division 
 
 
 Skills Used :
