@@ -22,15 +22,11 @@ Skills Used :
 
 
 • View Binding
-
 `
 
+
    buildFeatures {
- 
- 
     viewBinding true
-    
-    
      } 
      
      `
