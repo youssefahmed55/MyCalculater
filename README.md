@@ -5,11 +5,9 @@ Skills Used :
 • MVC
 
 •Navigation Component
-`
-
- implementation 'androidx.navigation:navigation-fragment:2.4.1'
 
 
+ `implementation 'androidx.navigation:navigation-fragment:2.4.1'
  implementation 'androidx.navigation:navigation-ui:2.4.1' `
 
 • View Binding
