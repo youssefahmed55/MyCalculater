@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment"
+    app:startDestination="@id/mySplash">
+
+    <fragment
+        android:id="@+id/mySplash"
+        android:name="com.example.mycalculator.MySplash"
+        android:label="fragment_my_splash"
+        tools:layout="@layout/fragment_my_splash" >
+        <action
+            android:id="@+id/action_mySplash_to_calculator"
+            app:destination="@id/calculator" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculator"
+        android:name="com.example.mycalculator.Calculator"
+        android:label="fragment_calculater"
+        tools:layout="@layout/fragment_calculator" />
+</navigation>
