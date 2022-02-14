@@ -1,8 +1,15 @@
 # MyCalculater
 Simple Calculater
+
+
 This Calculator to calculate Simple Operations like + , - , * and Division 
+
+
 Skills Used :
+
+
 • MVC
+
 
 •Navigation Component
 
@@ -16,8 +23,8 @@ Skills Used :
 
 • View Binding
 
-
 `
+
    buildFeatures {
  
  
@@ -25,8 +32,8 @@ Skills Used :
     
     
      } 
-     `
      
+     `
      
      
 • Sdp
