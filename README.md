@@ -5,17 +5,17 @@ Skills Used :
 • MVC
 
 •Navigation Component
+`
+
+ implementation 'androidx.navigation:navigation-fragment:2.4.1'
 
 
-` implementation 'androidx.navigation:navigation-fragment:2.4.1'
-
-
-  implementation 'androidx.navigation:navigation-ui:2.4.1' `
+ implementation 'androidx.navigation:navigation-ui:2.4.1' `
 
 • View Binding
 
-
- `  buildFeatures {
+`
+   buildFeatures {
  
  
     viewBinding true
@@ -26,5 +26,5 @@ Skills Used :
      
 • Sdp
 
-
-    `implementation 'com.intuit.sdp:sdp-android:1.0.6' `
+`
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'`
