@@ -11,7 +11,7 @@ Skills Used :
 • MVC
 
 
-•Navigation Component
+• Navigation Component
 
 
 ` implementation 'androidx.navigation:navigation-fragment:2.4.1'`
