@@ -8,6 +8,14 @@ This Calculator to calculate Simple Operations like + , - , * , % and Division
 build.gradle(Module) :
 
 
+• View Binding
+
+   android {
+   buildFeatures {
+    viewBinding true
+     }}
+
+
 dependencies:
 
 
@@ -18,15 +26,6 @@ dependencies:
  
  
 ` implementation 'androidx.navigation:navigation-ui:2.4.1'`
-
-
-
-• View Binding
-
-   android {
-   buildFeatures {
-    viewBinding true
-     }}
      
      
 • Sdp
