@@ -5,7 +5,10 @@ Simple Calculator
 This Calculator to calculate Simple Operations like + , - , * , % and Division 
 
 
-Skills Used :
+build.gradle(Module) :
+
+
+dependencies:
 
 
 • Navigation Component
@@ -20,10 +23,10 @@ Skills Used :
 
 • View Binding
 
-
+   android {
    buildFeatures {
     viewBinding true
-     } 
+     }}
      
      
 • Sdp
