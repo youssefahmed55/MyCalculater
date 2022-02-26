@@ -12,7 +12,8 @@
         android:theme="@style/Theme.MyCalculater">
         <activity
             android:name="com.example.mycalculator.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

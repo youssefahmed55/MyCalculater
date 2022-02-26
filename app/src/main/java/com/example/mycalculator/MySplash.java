@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -56,29 +57,24 @@ public class MySplash extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-
+    private View view;
     private static final String TAG = "MySplashFragment";
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_my_splash, container, false);
+        view = inflater.inflate(R.layout.fragment_my_splash, container, false);
 
-       Thread thread = new Thread(){
-           @Override
-           public void run() {
-
-               try {
-                   super.run();
-                   sleep(5000);   //Splash Screen 5 seconds
-                   Navigation.findNavController(view).navigate(R.id.action_mySplash_to_calculator);// Go to another Fragment
-               }catch (Exception e){
-                   Log.e(TAG, "run: ", e);
-
-               }
-           }
-       };
-       thread.start();  //Start Thread
+         new Handler().postDelayed(new Runnable() {
+             @Override
+             public void run() {
+                 try {
+                     Navigation.findNavController(view).navigate(R.id.action_mySplash_to_calculator);// Go to another Fragment
+                 }catch (Exception e){
+                     Log.d(TAG, "run: "+ e.getMessage());
+                 }
+             }
+         },2000);
 
         return view;
     }

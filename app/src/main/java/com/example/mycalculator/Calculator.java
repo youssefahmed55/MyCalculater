@@ -1,21 +1,17 @@
 package com.example.mycalculator;
-
 import android.app.Activity;
-import android.content.Context;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.os.Bundle;
-
 import androidx.activity.OnBackPressedCallback;
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
-
 import com.example.mycalculator.databinding.FragmentCalculatorBinding;
-
 import java.util.ArrayList;
 
 /**
@@ -65,23 +61,20 @@ public class Calculator extends Fragment implements View.OnClickListener {
         }
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
 
     private FragmentCalculatorBinding binding;
-    private String s = "";
+    private String s ="" ;
     private double result;
+    private View view;
     private static final String TAG = "youssef";
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentCalculatorBinding.inflate(inflater, container, false);
-        View view = binding.getRoot();
-        buttonssetonclicklistener();               //onClick for Buttons and EditText
+        view = binding.getRoot();
+        if(savedInstanceState != null)                 //if Edit text not equal null before orientation screen
+            s= savedInstanceState.getString("Key");
+            buttonssetonclicklistener();               //onClick for Buttons and EditText
         onclickback();                             //if i click back button
         binding.EdittextCalc.setKeyListener(null); // Disable click on edittext and open keyboard
 
@@ -97,7 +90,7 @@ public class Calculator extends Fragment implements View.OnClickListener {
                 getActivity().finish();
             }
         };
-        requireActivity().getOnBackPressedDispatcher().addCallback(this, callback);
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), callback);
 
     }
 
@@ -379,5 +372,11 @@ public class Calculator extends Fragment implements View.OnClickListener {
             }
         }
         return 0.0;
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("Key", binding.EdittextCalc.getText().toString().trim());
     }
 }

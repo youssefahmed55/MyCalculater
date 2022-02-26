@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/Edittext_Calc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:textSize="@dimen/_30sdp"
+            android:inputType="none"
+            ></EditText>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:columnCount="4"
+            android:orientation="horizontal"
+            android:rowCount="5"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/C_Calc"
+                android:text="C"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mutul_Calc"
+                android:text="%"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Clear_Calc"
+                android:text="CLR"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/division_Calc"
+                android:text="/"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/seven_Calc"
+                android:text="7"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/eight_Calc"
+                android:text="8"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nine_Calc"
+                android:text="9"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/multiplyy_Calc"
+                android:text="X"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/four_Calc"
+                android:text="4"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/five_Calc"
+                android:text="5"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/six_Calc"
+                android:text="6"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/minus_Calc"
+                android:text="-"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/one_Calc"
+                android:text="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/two_Calc"
+                android:text="2"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/three_Calc"
+                android:text="3"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/plus_Calc"
+                android:text="+"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/multizero_Calc"
+                android:text="00"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/zero_Calc"
+                android:text="0"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dot_Calc"
+                android:text="."
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/equal_Calc"
+                android:text="="
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                ></androidx.appcompat.widget.AppCompatButton>
+        </GridLayout>
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
