@@ -37,7 +37,7 @@ dependencies:
 Download APk:
 
 
-https://www.mediafire.com/file/l30uy08d46totd3/MyCalculater.apk/file
+https://www.mediafire.com/file/47orsm89wdbzrnj/MyCalculator.apk/file
 
 
 
